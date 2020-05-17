@@ -1,0 +1,14 @@
+22:13:06 **** Incremental Build of configuration Debug for project Clase9_ej2 ****
+make all 
+Building target: Clase9_ej2
+Invoking: GCC C Linker
+gcc  -o "Clase9_ej2"  ./src/Clase9_ej2.o ./src/Producto.o ./src/utn.o   
+/usr/bin/ld: ./src/utn.o: relocation R_X86_64_32 against `.rodata' can not be used when making a PIE object; recompile con -fPIC
+/usr/bin/ld: falló el enlace final: Sección no representable en la salida
+collect2: error: ld returned 1 exit status
+make: *** [Clase9_ej2] Error 1
+makefile:30: recipe for target 'Clase9_ej2' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:13:07 Build Failed. 4 errors, 0 warnings. (took 621ms)
+

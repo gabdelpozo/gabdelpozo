@@ -1,0 +1,15 @@
+23:05:32 **** Incremental Build of configuration Debug for project Parcial_ONE ****
+make all 
+Building file: ../src/Cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cliente.d" -MT"src/Cliente.o" -o "src/Cliente.o" "../src/Cliente.c"
+../src/Cliente.c:6:10: fatal error: utn.h: No existe el archivo o el directorio
+ #include "utn.h"
+          ^~~~~~~
+compilation terminated.
+src/subdir.mk:24: recipe for target 'src/Cliente.o' failed
+make: *** [src/Cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:05:34 Build Failed. 3 errors, 0 warnings. (took 1s.172ms)
+

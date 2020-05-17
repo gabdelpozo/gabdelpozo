@@ -1,0 +1,7 @@
+18:25:26 **** Clean-only build of configuration Debug for project asd ****
+make clean 
+rm -rf  ./src/Cliente.o ./src/Informes.o ./src/Publicacion.o ./src/main.o ./src/utn.o  ./src/Cliente.d ./src/Informes.d ./src/Publicacion.d ./src/main.d ./src/utn.d  asd
+ 
+
+18:25:28 Build Finished. 0 errors, 0 warnings. (took 1s.328ms)
+

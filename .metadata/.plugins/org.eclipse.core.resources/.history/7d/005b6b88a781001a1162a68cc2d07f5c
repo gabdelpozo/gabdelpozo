@@ -1,0 +1,12 @@
+#ifndef UTN_H_
+#define UTN_H_
+
+int opSumar(int num1, int num2, int *resultado);
+int opRestar(int num1, int num2, int *resultado);
+int opDividir(int num1, int num2, float *resultado);
+int opMultiplicar(int num1, int num2, int *resultado);
+int opFactorial(int num1, int *resultado);
+int imprimirResultados(int suma, int resta, float division,int divisionError, int multiplicacion, int factorial1, int factorial2);
+
+
+#endif /* UTN_H_ */

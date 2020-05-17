@@ -1,0 +1,49 @@
+/*
+ * utn_new.c
+ *
+ *  Created on: 17 abr. 2020
+ *      Author: gabriel
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+static int myGets(char* cadena, int longitud);
+
+/*
+ *\brief Lee de stdin hasta que encuentra un '\n' o hasta que haya copiado en cadena
+ *	     un maximo de 'longitud -1' caracteres.
+ *
+ *\param pResultado puntero al espacio de memoria donde se copiara la cadena obtenida
+ *\param longitud define el tamaño de cadena
+ *\return retorna 0(exito) si se obtiene una cadena y -1(error) si no.
+ *
+ */
+
+static int myGets(char* cadena, int longitud);
+{
+	return -1;
+}
+
+/*
+ *\brief Lee de stdin hasta que encuentra un '\n' o hasta que haya copiado en cadena
+ *	     un maximo de 'longitud -1' caracteres.
+ *
+ *\param pResultado puntero al espacio de memoria donde se copiara la cadena obtenida
+ *\param longitud define el tamaño de cadena
+ *\return retorna 0(exito) si se obtiene una cadena y -1(error) si no.
+ *
+ */
+
+int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos)
+{
+	int retorno = -1;
+	int buffer;
+
+	if(pResultado != NULL && mensaje != NULL)
+		do
+		{
+			printf("%s",mensaje);
+			scanf
+		}
+}

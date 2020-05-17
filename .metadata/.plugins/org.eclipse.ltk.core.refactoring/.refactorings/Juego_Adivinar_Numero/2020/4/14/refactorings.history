@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Juego_Adivinar_Numero/src/Trabajo_Practico_1.c&apos; to &apos;main.c&apos;" description="Rename resource &apos;Trabajo_Practico_1.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Trabajo_Practico_1.c" name="main.c" stamp="1586024346278" updateReferences="true"/>
+</session>

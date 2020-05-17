@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+	int auxInt;
+	/*
+	char nombre[11]="ZZZZZZZZZZZ"; // '\0'
+	char apellido[11]="PEREZ"; // '\0'
+	char auxiliar[30]; // '\0'
+	char buffer[256];
+	int i;
+
+
+	strncpy(auxiliar,nombre,sizeof(auxiliar));
+
+
+	printf("\nSIZE Nombre mide %d ----- Auxiliar mide %d",sizeof(nombre),sizeof(auxiliar));
+	printf("\nSTRLEN Nombre mide %d ----- Auxiliar mide %d",strnlen(nombre,sizeof(nombre)), strnlen(auxiliar,sizeof(auxiliar)));
+
+*/
+	while(1)
+	{
+	if(utn_getNumero(&auxInt,"\n Numero?:","\n Error",1,10,2)==0)
+	{
+		printf("\n El numero es %d",auxInt);
+	}
+	return EXIT_SUCCESS;
+	}
+}

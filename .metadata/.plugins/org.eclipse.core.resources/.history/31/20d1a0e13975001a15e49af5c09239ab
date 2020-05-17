@@ -1,0 +1,88 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int variableGlobal; // no usar, recursan la materia
+
+// prototipos de funciones
+
+int sumarConLimite(int operador1,int operador2); // prototipo
+
+
+
+int main(void)
+
+{
+
+	setbuf(stdout,NULL); // SIEMPRE!!!
+
+    int num1;
+
+    int num2;
+
+    int suma;
+
+    printf("ingrese un numero\n");
+
+    scanf("%d",&num1);
+
+    printf("ingrese otro numero\n");
+
+    scanf("%d",&num2);
+
+    suma = sumarConLimite(num1,num2);
+
+    printf("la suma es %d",suma);
+
+    printf("ingrese un numero\n");
+
+    scanf("%d",&num1);
+
+    printf("ingrese otro numero\n");
+
+    scanf("%d",&num2);
+
+    suma = sumarConLimite(num1,num2);
+
+    printf("la suma es %d",suma);
+
+	return EXIT_SUCCESS;
+
+}
+
+// funciones auxiliares de mi programa
+
+//definicion de la funcion sumarConLimite
+
+//TIPO  NOMBRE_FUNCION (void)
+
+//TIPO  NOMBRE_FUNCION (TIPO NOMBRE_ARG,...)
+
+
+int sumarConLimite(int operador1,int operador2) // prototipo
+
+{
+
+	int resultado; // variable local de la funcion
+
+	//operador1:33
+
+	//operador2:27
+
+	// codigo de mi funcion
+
+	resultado=operador1 + operador2;
+
+	if(resultado>100)
+
+	{
+
+		resultado=100;
+
+	}
+
+	// retornar valor
+
+	return resultado;
+}
+

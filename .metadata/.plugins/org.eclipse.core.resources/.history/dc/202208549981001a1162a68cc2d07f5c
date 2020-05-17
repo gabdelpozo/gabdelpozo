@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+int main(void)
+{
+	int opcionesMenu;
+	int i;
+	int x=0;
+	int flagX=0;
+	int y=0;
+	int flagY=0;
+
+	do
+	{
+		printf("Menu de opciones\n"
+				"1-Ingresar primer operando\n"
+				"2-Ingresar segundo operando\n"
+				"3-Calcular todas las operacioes\n"
+				"4-Informar resultados\n"
+				"5-Salir\n");
+		if(utn_getNumero(&opcionesMenu, "\nIngrese la opción que desea efectuar:","\nERROR - Ingrese una opción valida",0,3,2)==0)
+		{
+			switch(opcionesMenu)
+			{
+			case 1:
+				utn_getNumero(&x,"\Ingrese el primer operando: ","\nERROR - Numero invalido, intente nuevamente",0,100,10);
+				flagX = 1;
+				break;
+
+			case 2:
+				utn_getNumero(&y,"\Ingrese el segundo operando: ","\nERROR - Numero invalido, intente nuevamente",0,100,10);
+				flagY = 1;
+				break;
+
+			case 3:
+				if(flagX==1 && flagY==1)
+				{
+					opSuma(x,y)
+				}
+
+			}
+		}
+
+	}while(opcionesMenu != 6);
+
+
+    return 0;
+}
+

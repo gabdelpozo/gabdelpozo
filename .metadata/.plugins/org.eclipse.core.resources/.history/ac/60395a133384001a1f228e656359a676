@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#define QTY_PERSONAS 1000
+
+
+int main(void)
+{
+	int edad;
+	float altura;
+	char nombre[51];
+	char sexo;
+
+	int aEdades[QTY_PERSONAS];
+	float aAlturas[QTY_PERSONAS];
+	char aNombres[QTY_PERSONAS];
+	char aSexos[QTY_PERSONAS];
+
+
+	return EXIT_SUCCESS;
+}
+

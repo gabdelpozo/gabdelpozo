@@ -1,0 +1,19 @@
+19:21:30 **** Incremental Build of configuration Debug for project Clase_8 ****
+make all 
+Building file: ../src/Alumno.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Alumno.d" -MT"src/Alumno.o" -o "src/Alumno.o" "../src/Alumno.c"
+../src/Alumno.c: In function ‘imprimirArrayAlumnos’:
+../src/Alumno.c:23:16: error: ‘Alumno {aka struct <anonymous>}’ has no member named ‘isEmpty’
+    if(pArray[i].isEmpty == 0)
+                ^
+../src/Alumno.c:25:54: error: ‘auxiliar’ undeclared (first use in this function)
+     printf("\n Nombre: %s - Legajo: %d - Altura: %f",auxiliar.nombre,auxiliar.legajo,auxiliar.altura);
+                                                      ^~~~~~~~
+../src/Alumno.c:25:54: note: each undeclared identifier is reported only once for each function it appears in
+src/subdir.mk:24: recipe for target 'src/Alumno.o' failed
+make: *** [src/Alumno.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:21:34 Build Failed. 4 errors, 0 warnings. (took 3s.766ms)
+

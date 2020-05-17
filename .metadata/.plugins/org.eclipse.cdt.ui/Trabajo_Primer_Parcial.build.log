@@ -1,0 +1,15 @@
+21:13:52 **** Incremental Build of configuration Debug for project Trabajo_Primer_Parcial ****
+make all 
+Building file: ../src/Trabajo_Primer_Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Primer_Parcial.d" -MT"src/Trabajo_Primer_Parcial.o" -o "src/Trabajo_Primer_Parcial.o" "../src/Trabajo_Primer_Parcial.c"
+../src/Trabajo_Primer_Parcial.c:18:10: fatal error: Cliente.h: No existe el archivo o el directorio
+ #include "Cliente.h"
+          ^~~~~~~~~~~
+compilation terminated.
+src/subdir.mk:18: recipe for target 'src/Trabajo_Primer_Parcial.o' failed
+make: *** [src/Trabajo_Primer_Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+21:13:53 Build Failed. 3 errors, 0 warnings. (took 438ms)
+

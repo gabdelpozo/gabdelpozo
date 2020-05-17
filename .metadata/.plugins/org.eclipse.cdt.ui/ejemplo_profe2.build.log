@@ -1,0 +1,19 @@
+14:04:02 **** Build of configuration Debug for project ejemplo_profe2 ****
+make all 
+Building file: ../ejemplo_profe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ejemplo_profe.d" -MT"ejemplo_profe.o" -o "ejemplo_profe.o" "../ejemplo_profe.c"
+../ejemplo_profe.c: In function ‘main’:
+../ejemplo_profe.c:43:9: warning: unused variable ‘numOtra’ [-Wunused-variable]
+     int numOtra;
+         ^~~~~~~
+Finished building: ../ejemplo_profe.c
+ 
+Building target: ejemplo_profe2
+Invoking: GCC C Linker
+gcc  -o "ejemplo_profe2"  ./ejemplo_profe.o   
+Finished building target: ejemplo_profe2
+ 
+
+14:04:03 Build Finished. 0 errors, 1 warnings. (took 696ms)
+

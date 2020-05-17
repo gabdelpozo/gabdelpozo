@@ -1,0 +1,25 @@
+22:48:44 **** Build of configuration Release for project Clase10_RESUELTO ****
+make all 
+Building file: ../src/Clase10.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Clase10.d" -MT"src/Clase10.o" -o "src/Clase10.o" "../src/Clase10.c"
+Finished building: ../src/Clase10.c
+ 
+Building file: ../src/Fantasma.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Fantasma.d" -MT"src/Fantasma.o" -o "src/Fantasma.o" "../src/Fantasma.c"
+Finished building: ../src/Fantasma.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Clase10_RESUELTO
+Invoking: GCC C Linker
+gcc  -o "Clase10_RESUELTO"  ./src/Clase10.o ./src/Fantasma.o ./src/utn.o   
+Finished building target: Clase10_RESUELTO
+ 
+
+22:48:46 Build Finished. 0 errors, 0 warnings. (took 1s.257ms)
+

@@ -1,0 +1,8 @@
+#ifndef UTN_H_
+#define UTN_H_
+
+float getRadio(char mensaje[]);
+float calcularArea(float operador1,float operador2,float resul)
+
+
+#endif /* UTN_H_ */

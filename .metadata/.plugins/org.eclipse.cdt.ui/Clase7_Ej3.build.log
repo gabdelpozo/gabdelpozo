@@ -1,0 +1,15 @@
+18:45:59 **** Incremental Build of configuration Debug for project Clase7_Ej3 ****
+make all 
+Building target: Clase7_Ej3
+Invoking: GCC C Linker
+gcc  -o "Clase7_Ej3"  ./src/Clase7_Ej3.o ./src/main.o ./src/utn.o   
+./src/main.o: En la función `main':
+makefile:30: recipe for target 'Clase7_Ej3' failed
+/home/gabriel/eclipse-workspace/Clase7_Ej3/Debug/../src/main.c:15: definiciones múltiples de `main'
+./src/Clase7_Ej3.o:/home/gabriel/eclipse-workspace/Clase7_Ej3/Debug/../src/Clase7_Ej3.c:16: primero se definió aquí
+collect2: error: ld returned 1 exit status
+make: *** [Clase7_Ej3] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:45:59 Build Failed. 4 errors, 0 warnings. (took 577ms)
+

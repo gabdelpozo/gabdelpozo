@@ -1,0 +1,10 @@
+#ifndef UTN_H_
+#define UTN_H_
+
+int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
+/*	Recibe las variables: int *pResultado en donde se guarda el numero ingresado. char *mensaje para el mensaje, char *mensajeError para
+ * 	el mensaje de error, int minimo para indicar el limite minimo, int maximo para indicar el limite maximo, y int reintentos para
+ * 	determinar la cantidad de veces que puede intentar el usuario.
+ */
+
+#endif /* UTN_H_ */

@@ -1,0 +1,28 @@
+Una empresa requiere un sistema para administrar su nomina de empleados. Se sabe que dicha nomina bajo ninguna circunstancia superara los 1000 empleados.
+
+#define NOMINA_EMPLEADOS 1000
+
+Datos: 
+int id
+char name[51]
+char lastName[51]
+float salary
+int sector
+int isEmpty
+
+El sistema debera tener el siguiente menu de opciones:
+
+1. ALTAS: Se debe permitir ingresar un empleado calculando automaticamente el numero de Id. El resto de los campos se le pedira al usuario.
+
+2. MODIFICAR: Se ingresara el numero de Id, permitiendo modificar: o Nombre o Apeliido o Salario o Sector.
+
+3. BAJA: Se ingresara el Numero de Id y se eliminara el empleado por el sistema.
+
+4. INFORMAR:
+	1. Listado de los empleados ordenados 		alfabeticamente por Apellido y Sector.
+	2. Total y promedio de los salarios, y 		cuantos empleados superan el salario 		promedio.
+
+NOTA: Se debera realizar el menu de opciones y las validaciones a traves de funciones. Tener en cuenta que no se podra ingresar a los casos 2, 3 y 4; sin antse haber realizado la carga de algun empleado.
+
+Para la realizacion de este programa, se utilizara una biblioteca llamada "ArrayEmployees" que facilitara el manejo de la lista de empleados y su modificacion. En la seccion siguiente se detallan las funciones que esta biblioteca debe tener.
+

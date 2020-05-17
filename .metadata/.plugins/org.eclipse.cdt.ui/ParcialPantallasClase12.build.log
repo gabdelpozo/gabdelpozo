@@ -1,0 +1,16 @@
+02:29:33 **** Incremental Build of configuration Debug for project ParcialPantallasClase12 ****
+make all 
+Building file: ../Informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Informes.d" -MT"Informes.o" -o "Informes.o" "../Informes.c"
+In file included from ../Informes.c:13:0:
+../Informes.h:7:10: fatal error: Cliente.h: No existe el archivo o el directorio
+ #include "Cliente.h"
+          ^~~~~~~~~~~
+compilation terminated.
+make: *** [Informes.o] Error 1
+subdir.mk:30: recipe for target 'Informes.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+02:29:34 Build Failed. 3 errors, 0 warnings. (took 543ms)
+

@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos)
+{
+	int bufferInt = 0;
+	int retorno = -1;
+	int acumulador = 0;
+	if(pResultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && reintentos >= 0)
+	{
+		printf("%s",mensaje);
+		scanf("%d",bufferInt);
+		acumulador = acumulador + bufferInt;
+
+		if(retorno == 0)
+		{
+			if(pResultado<0 && pResultado>199)
+			{
+			printf("%s",mensajeError);
+			}
+		}
+
+		else
+		{
+			maximo = bufferInt;
+			minimo = bufferInt;
+			acumulador = bufferInt;
+
+			if(bufferInt>maximo)
+			{
+				maximo=bufferInt;
+				("El maximo es: %d", maximo);
+			}
+
+			if(bufferInt<minimo)
+			{
+				minimo=bufferInt;
+				("El minimo es: %d", minimo);
+			}
+
+		}
+
+	}
+	return retorno;
+}

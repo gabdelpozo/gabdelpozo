@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn_new.h"
+
+int main(void)
+{
+	char nombre[50];
+
+	if(myGets(nombre,sizeof(nombre)) == 0)
+	{
+		printf("%s",nombre);
+	}
+	return EXIT_SUCCESS;
+}
+

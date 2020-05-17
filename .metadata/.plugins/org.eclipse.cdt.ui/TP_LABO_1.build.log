@@ -1,0 +1,18 @@
+14:03:59 **** Build of configuration Debug for project TP_LABO_1 ****
+make all 
+Building file: ../src/funciones.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/funciones.d" -MT"src/funciones.o" -o "src/funciones.o" "../src/funciones.c"
+../src/funciones.c:88:5: error: conflicting types for ‘utn_getNumero’
+ int utn_getNumero(int* pResultado,char *mensaje,char *mensajeError,int minimo,int maximo,int reintentos)
+     ^~~~~~~~~~~~~
+In file included from ../src/funciones.c:4:0:
+../src/funciones.h:22:5: note: previous declaration of ‘utn_getNumero’ was here
+src/subdir.mk:24: recipe for target 'src/funciones.o' failed
+ int utn_getNumero(int* pResultado,const char *mensaje,const char *mensajeError,int minimo,int maximo,int reintentos);
+     ^~~~~~~~~~~~~
+make: *** [src/funciones.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:03:59 Build Failed. 3 errors, 0 warnings. (took 482ms)
+

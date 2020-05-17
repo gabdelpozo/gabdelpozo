@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#define QTY_PERSONAS 1000
+
+typedef struct
+{
+	int legajo;
+	char nombre[51];
+	float altura;
+}Alumno;
+
+int main(void)
+{
+	Alumno auxiliar;
+
+	auxiliar.altura = 2.04;
+	auxiliar.legajo = 25;
+	strcpy(auxiliar.nombre,"JUAN");
+
+	printf("Nombre: %s - Legajo: %d - Altura: %f",auxiliar.nombre,auxiliar.legajo,auxiliar.altura);
+
+	return EXIT_SUCCESS;
+}
+

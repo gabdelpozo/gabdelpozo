@@ -1,0 +1,18 @@
+18:18:13 **** Build of configuration Debug for project Parcial_Uno ****
+make all 
+Building file: ../Cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Cliente.d" -MT"Cliente.o" -o "Cliente.o" "../Cliente.c"
+../Cliente.c: In function ‘cli_ordenarPorNombrePrecio’:
+../Cliente.c:288:35: error: ‘Cliente {aka struct <anonymous>}’ has no member named ‘precio’
+      (auxiliarCmp == 0 && array[i].precio < array[i+1].precio) )
+                                   ^
+../Cliente.c:288:55: error: ‘Cliente {aka struct <anonymous>}’ has no member named ‘precio’
+      (auxiliarCmp == 0 && array[i].precio < array[i+1].precio) )
+subdir.mk:30: recipe for target 'Cliente.o' failed
+                                                       ^
+make: *** [Cliente.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:18:14 Build Failed. 4 errors, 0 warnings. (took 1s.380ms)
+

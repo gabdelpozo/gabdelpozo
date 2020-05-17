@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include "menu_calculadora.h"
+
+
+int opSumar(int num1, int num2, int *resultado)
+{
+    *resultado = num1 + num2;
+    return 0;
+}
+
+int opRestar(int num1, int num2, int *resultado)
+{
+    *resultado = num1 - num2;
+    return 0;
+}
+
+int opDividir(int num1, int num2, float *resultado)
+{
+    int ret = -1;
+    if (num2 == 0)
+    {
+        ret = -1;
+    }else
+        {
+            *resultado = num1/num2;
+            ret = 0;
+        }
+    return ret;
+}
+
+int opMultiplicar(int num1, int num2, int *resultado)
+{
+    *resultado = num1 * num2;
+    return 0;
+}
+
+int opFactorial(int num1, int *resultado)
+{
+    int ret = 0;
+    int i;
+    int buffer[128];
+    buffer = num1;
+    num1--;
+    if (num1<0)
+    {
+        ret = -1;
+    }
+    else if (num1 == 0)
+        {
+            buffer = 1;
+        }
+    	else
+            {
+                for (i=1;i<num1;num1--)
+                {
+                    buffer = buffer * num1;
+                }
+            }
+    *resultado = buffer;
+    return ret;
+}
+
+int imprimirResultados(int suma, int resta, float division,int errorDivision, int multiplicacion, char factorial1[128], char factorial2[128])
+{
+    printf("\nEl resultado de A+B es: %d \nEl resultado de A-B es: %d",suma, resta);
+    if (!errorDivision)
+    {
+        printf("\nEl resultado de A/B es: %.2f",division);
+    }
+    else
+	{
+		printf("\nNo se puede dividir por cero");
+	}
+    printf("\nEl resultado de A*B es: %d",multiplicacion);
+    printf("\nEl factorial de A es: %s y El factorial de B es: %s",factorial1[128],factorial2[128]);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+

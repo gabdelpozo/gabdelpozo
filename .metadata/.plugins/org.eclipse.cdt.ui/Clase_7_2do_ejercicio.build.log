@@ -1,0 +1,22 @@
+14:03:57 **** Build of configuration Debug for project Clase_7_2do_ejercicio ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:21:6: warning: unused variable ‘menu’ [-Wunused-variable]
+  int menu;
+      ^~~~
+../src/main.c:19:8: warning: variable ‘temperaturas’ set but not used [-Wunused-but-set-variable]
+  float temperaturas[MONTH_DAYS];
+        ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Clase_7_2do_ejercicio
+Invoking: GCC C Linker
+gcc  -o "Clase_7_2do_ejercicio"  ./src/main.o ./src/utn.o   
+Finished building target: Clase_7_2do_ejercicio
+ 
+
+14:03:58 Build Finished. 0 errors, 2 warnings. (took 542ms)
+

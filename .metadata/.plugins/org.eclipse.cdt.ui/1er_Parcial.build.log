@@ -1,0 +1,172 @@
+14:26:31 **** Incremental Build of configuration Debug for project 1er_Parcial ****
+make all 
+Building file: ../src/1er_Parcial.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/1er_Parcial.d" -MT"src/1er_Parcial.o" -o "src/1er_Parcial.o" "../src/1er_Parcial.c"
+../src/1er_Parcial.c: In function ‘main’:
+../src/1er_Parcial.c:40:88: warning: passing argument 7 of ‘cli_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,0,&idClientes,"Fernando","Ruiz", 233453428,0);
+                                                                                        ^~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: expected ‘char *’ but argument is of type ‘int’
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:40:2: error: too many arguments to function ‘cli_altaForzadaArray’
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,0,&idClientes,"Fernando","Ruiz", 233453428,0);
+  ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: declared here
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:41:86: warning: passing argument 7 of ‘cli_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,1,&idClientes,"Lucas","Perez", 23383583519,1);
+                                                                                      ^~~~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: expected ‘char *’ but argument is of type ‘long int’
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:41:2: error: too many arguments to function ‘cli_altaForzadaArray’
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,1,&idClientes,"Lucas","Perez", 23383583519,1);
+  ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: declared here
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:42:89: warning: passing argument 7 of ‘cli_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,2,&idClientes,"Gabriel","Blanco", 24345533457,0);
+                                                                                         ^~~~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: expected ‘char *’ but argument is of type ‘long int’
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:42:2: error: too many arguments to function ‘cli_altaForzadaArray’
+  cli_altaForzadaArray(arrayClientes,CANTIDAD_CLIENTES,2,&idClientes,"Gabriel","Blanco", 24345533457,0);
+  ^~~~~~~~~~~~~~~~~~~~
+In file included from ../src/1er_Parcial.c:10:0:
+../src/Cliente.h:28:5: note: declared here
+ int cli_altaForzadaArray(Cliente* array,int limite, int indice, int* id,char* nombre,char* apellido, char* cuit);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:44:84: warning: passing argument 5 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,0,&idPublicaciones,1,"Aviso Periodistico","1234",2);
+                                                                                    ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:44:107: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,0,&idPublicaciones,1,"Aviso Periodistico","1234",2);
+                                                                                                           ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+src/subdir.mk:27: recipe for target 'src/1er_Parcial.o' failed
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:44:114: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,0,&idPublicaciones,1,"Aviso Periodistico","1234",2);
+                                                                                                                  ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:45:84: warning: passing argument 5 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,1,&idPublicaciones,1,"Aviso de Deportes","1234",10);
+                                                                                    ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:45:106: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,1,&idPublicaciones,1,"Aviso de Deportes","1234",10);
+                                                                                                          ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:45:113: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,1,&idPublicaciones,1,"Aviso de Deportes","1234",10);
+                                                                                                                 ^~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:46:84: warning: passing argument 5 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,2,&idPublicaciones,1,"Aviso de Espectaculos","1234",20);
+                                                                                    ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:46:110: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,2,&idPublicaciones,1,"Aviso de Espectaculos","1234",20);
+                                                                                                              ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:46:117: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,2,&idPublicaciones,1,"Aviso de Espectaculos","1234",20);
+                                                                                                                     ^~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:47:104: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,3,&idPublicaciones,0,"Aviso de Musica","2222",2);
+                                                                                                        ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:47:111: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,3,&idPublicaciones,0,"Aviso de Musica","2222",2);
+                                                                                                               ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:48:106: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,4,&idPublicaciones,0,"Aviso de Economia","2222",10);
+                                                                                                          ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:48:113: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,4,&idPublicaciones,0,"Aviso de Economia","2222",10);
+                                                                                                                 ^~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:49:84: warning: passing argument 5 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,5,&idPublicaciones,2,"Aviso de Actualidad","2222",20);
+                                                                                    ^
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:49:108: warning: passing argument 7 of ‘pub_altaForzadaArray’ from incompatible pointer type [-Wincompatible-pointer-types]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,5,&idPublicaciones,2,"Aviso de Actualidad","2222",20);
+                                                                                                            ^~~~~~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘char *’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:49:115: warning: passing argument 8 of ‘pub_altaForzadaArray’ makes pointer from integer without a cast [-Wint-conversion]
+  pub_altaForzadaArray(arrayPublicaciones,CANTIDAD_PUBLICACIONES,5,&idPublicaciones,2,"Aviso de Actualidad","2222",20);
+                                                                                                                   ^~
+In file included from ../src/1er_Parcial.c:11:0:
+../src/Publicacion.h:30:5: note: expected ‘int *’ but argument is of type ‘int’
+ int pub_altaForzadaArray(Publicacion* array,int limite, int indice, int* idPub, int* idCliente,char* texto,int* rubro,int* estado);
+     ^~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:132:7: warning: implicit declaration of function ‘info_imprimirClientespubratadasByCuit’ [-Wimplicit-function-declaration]
+      !info_imprimirClientespubratadasByCuit(arrayPublicaciones,CANTIDAD_PUBLICACIONES,arrayClientes,CANTIDAD_CLIENTES,auxiliarCuit))
+       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/1er_Parcial.c:177:6: warning: implicit declaration of function ‘info_imprimirPublicacionesConEstado’ [-Wimplicit-function-declaration]
+      info_imprimirPublicacionesConEstado(arrayPublicaciones,CANTIDAD_PUBLICACIONES,arrayClientes,CANTIDAD_CLIENTES,auxiliarCuit);
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/1er_Parcial.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:26:32 Build Failed. 5 errors, 21 warnings. (took 1s.116ms)
+

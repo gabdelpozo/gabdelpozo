@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+#include "Menu.h"
+#include "ArrayEmployees.h"
+
+
+/** \brief Es el menu de opciones principal.
+ * \return Retorna la opcion elegida.
+ */
+
+
+int menuPrincipal()
+{
+    int opcion;
+    printf("\n1. Cargar un Empleado");
+    printf("\n2. Modificar un Empleado");
+    printf("\n3. Eliminar un Empleado");
+    printf("\n4. Listado de Empleados");
+    printf("\n5. Ordenar listado de Empleados alfabeticamente");
+    printf("\n6. Calculo total y promedio de los salarios, y "
+				"cuantos empleados superan el salario promedio");
+    printf("\n7. Salir\n");
+
+    utn_getNumero(&opcion, "\nIngrese una opcion:", "\nError, Ingrese una opcion correcta.",1,7,2);
+    printf("\n\n");
+    return opcion;
+}

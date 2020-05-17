@@ -1,0 +1,9 @@
+13:44:14 **** Incremental Build of configuration Debug for project aasd ****
+make all 
+Cannot run program "make": Unknown reason
+
+Error: Program "make" not found in PATH
+PATH=[/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin]
+
+13:44:14 Build Failed. 1 errors, 0 warnings. (took 51ms)
+

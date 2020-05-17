@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+/*
+// EJERICIO: Pedirle al usuario 5 edades y LUEGO
+// imprimir las 5 edades. Definir un array de 5 posiciones.
+// y usar la funcion utn_getNumero() para pedir los valores
+*/
+
+int main(void)
+{
+	int edad;
+	int numeros[];
+	// Ejemplo 1
+	int X=0;
+	do{
+		numeros[X] = 5;
+		X=X+1;
+	}while(X<7);
+
+/*// Ejemplo 2
+	int i;
+	for(i=0; i<7; i++) // de 0 a 6
+	{
+		numeros[i] = 5;
+	}	​
+*/
+
+if(utn_getNumero(&numeros[X],"Ingrese edad:","Esta edad no va\n",1,120,3)==0)
+{
+
+	printf("Ingresaste edad:%d\n",numeros[X]);
+
+}
+
+else
+{
+	printf("Sonaste no tenes idea lo que es una eda'\n");
+}
+}

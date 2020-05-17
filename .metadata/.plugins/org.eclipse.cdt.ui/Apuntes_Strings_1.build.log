@@ -1,0 +1,28 @@
+14:03:49 **** Build of configuration Debug for project Apuntes_Strings_1 ****
+make all 
+Building file: ../src/utn_new.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn_new.d" -MT"src/utn_new.o" -o "src/utn_new.o" "../src/utn_new.c"
+../src/utn_new.c: In function ‘getInt’:
+../src/utn_new.c:25:3: error: too few arguments to function ‘esNumerica’
+   esNumerica(bufferString))
+   ^~~~~~~~~~
+In file included from ../src/utn_new.c:10:0:
+../src/utn_new.h:11:12: note: declared here
+src/subdir.mk:21: recipe for target 'src/utn_new.o' failed
+ static int esNumerica(char* cadena, int limite);
+            ^~~~~~~~~~
+../src/utn_new.c: In function ‘myGets’:
+../src/utn_new.c:49:3: warning: implicit declaration of function ‘__fpurge’; did you mean ‘__wur’? [-Wimplicit-function-declaration]
+   __fpurge(stdin);
+   ^~~~~~~~
+   __wur
+At top level:
+../src/utn_new.c:105:12: warning: ‘utn_getNumero’ defined but not used [-Wunused-function]
+ static int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos)
+            ^~~~~~~~~~~~~
+make: *** [src/utn_new.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:03:50 Build Failed. 3 errors, 2 warnings. (took 663ms)
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="pub"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="cont"/>
+			<item value="pan"/>
+			<item value="f"/>
+			<item value="fp"/>
+			<item value="pantalla"/>
+			<item value="contratacion"/>
+			<item value="clitalla"/>
+			<item value="cliatalla"/>
+			<item value="buffercliente"/>
+			<item value="getnom"/>
+			<item value="Contratacion"/>
+			<item value="id"/>
+			<item value="idPantalla"/>
+			<item value="Pantallas"/>
+			<item value="Pantalla"/>
+		</list>
+		<list key="replacehistory">
+			<item value="pub"/>
+			<item value="cli"/>
+			<item value="Cliente"/>
+			<item value="cliente"/>
+			<item value="publicacion"/>
+			<item value="Publicacion"/>
+			<item value="bufferCliente"/>
+			<item value="idPub"/>
+			<item value="idCliente"/>
+			<item value="Clientes"/>
+			<item value="__fpurge"/>
+			<item value="bufferEmployee"/>
+			<item value="empleado"/>
+			<item value="Employee"/>
+			<item value="emp"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="822"/>
+		<item key="DIALOG_Y_ORIGIN" value="73"/>
+		<item key="DIALOG_WIDTH" value="339"/>
+		<item key="DIALOG_HEIGHT" value="415"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|9.0|0|GTK|1|"/>
+	</section>
+</section>

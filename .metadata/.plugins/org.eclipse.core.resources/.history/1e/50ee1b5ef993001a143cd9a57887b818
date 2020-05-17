@@ -1,0 +1,171 @@
+/*
+ * Informes.c
+ *
+ *  Created on: May 5, 2020
+ *      Author: Mauro
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "utn.h"
+#include "Informes.h"
+
+#include "Cliente.h"
+#include "Publicacion.h"
+static const char ESTADOS[2][8]={"PAUSADO","ACTIVO"};
+
+int info_imprimirClientesPublicadosByCuit(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit)
+{
+	int retorno = -1;
+	int i;
+	int indiceArrayCliente;
+	int idCliente;
+	if(arrayPublicaciones != NULL && limitePublicaciones > 0 && arrayClientes != NULL && limiteClientes > 0 && auxiliarCuit != NULL)
+	{
+		for(i=0;i<limitePublicaciones;i++)
+		{
+			if(arrayPublicaciones[i].isEmpty == 0 && strncmp(arrayClientes[i].cuit,auxiliarCuit,CUIT_LEN) == 0)
+			{
+				retorno = 0;
+				idCliente = arrayPublicaciones[i].idCliente;
+				indiceArrayCliente = cli_buscarId(arrayClientes,limiteClientes,idCliente);
+
+				printf("\nID Publicacion: %d - Texto del aviso: %s - Cuit: %s - Numero de Rurbo: %d - ID del Cliente: %d",arrayPublicaciones[i].idPub,arrayPublicaciones[i].texto,arrayClientes[i].cuit,arrayPublicaciones[i].rubro,arrayPublicaciones[i].idCliente);
+				printf("\nNombre del Cliente: %s - Apellido del Cliente: %s - Estado de la publicacion: %d\n",arrayClientes[indiceArrayCliente].nombre,arrayClientes[indiceArrayCliente].apellido,ESTADOS[arrayPublicaciones[indiceArrayCliente]->estado]);
+			}
+		}
+	}
+	return retorno;
+}
+
+
+
+int info_imprimirPublicacionesConEstado(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit)
+{
+	int retorno = -1;
+	int i;
+	int indiceArrayCliente;
+	int idCliente;
+	int auxiliarEstado;
+	if(arrayPublicaciones != NULL && limitePublicaciones > 0 && arrayClientes != NULL && limiteClientes > 0 && auxiliarCuit != NULL)
+	{
+		for(i=0;i<limitePublicaciones;i++)
+		{
+			if(arrayPublicaciones[i].isEmpty)
+			{
+				continue;
+			}
+			if(strncmp(arrayClientes[i].cuit,auxiliarCuit,CUIT_LEN) == 0)
+			{
+				retorno = 0;
+				idCliente = arrayPublicaciones[i].idCliente;
+				indiceArrayCliente = cli_buscarId(arrayClientes,limiteClientes,idCliente);
+				auxiliarEstado = arrayPublicaciones[i].estado * arrayPublicaciones[indiceArrayCliente].rubro;
+				printf("\nID: %d - Texto: %s - Rubro: %d - IdCliente: %d - Estado: %d"
+															,arrayPublicaciones[i].idPub
+															,arrayPublicaciones[i].texto
+															,arrayPublicaciones[i].rubro
+															,arrayPublicaciones[i].idCliente
+															,arrayPublicaciones[i].estado
+															);
+			}
+		}
+	}
+	return retorno;
+}
+
+#define CANTIDAD_CLIENTES 1000
+
+int info_imprimirPublicacionesConImportePorCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes)
+{
+
+	int retorno = -1;
+	char listaCuit[CANTIDAD_CLIENTES][CUIT_LEN];
+	int i;
+	int j;
+	int flagExisteCuit;
+	int indiceCuitLibre = 0;
+	float auxiliarDeuda;
+	float deudaMaxima;
+	int indiceClienteDeudaMaxima;
+
+	for(i=0;i<limitePublicaciones;i++)
+	{
+		flagExisteCuit = 0;
+		if(arrayClientes[i].isEmpty == 0)
+		{
+			for(j=0;j<indiceCuitLibre;j++)
+			{
+				if(strncmp(arrayClientes[i].cuit,listaCuit[j],CUIT_LEN ) == 0)
+				{
+					flagExisteCuit = 1;
+					break;
+				}
+			}
+			if(flagExisteCuit == 0)
+			{
+				strncpy(listaCuit[indiceCuitLibre],arrayClientes[i].cuit,CUIT_LEN);
+				indiceCuitLibre++;
+			}
+		}
+	}
+
+	for(j=0;j<indiceCuitLibre;j++)
+	{
+		printf("\n\n El cliente con cuit %s\n",listaCuit[j]);
+		info_imprimirPublicacionesConEstado(arrayPublicaciones,limitePublicaciones,arrayClientes,limiteClientes,listaCuit[j]);
+	}
+
+
+
+	for(j=0;j<indiceCuitLibre;j++)
+	{
+
+		info_calcularDeudaCliente(arrayPublicaciones,limitePublicaciones,arrayClientes,limiteClientes,listaCuit[j], &auxiliarDeuda);
+		if(i== 0|| (auxiliarDeuda > deudaMaxima))
+		{
+			deudaMaxima = auxiliarDeuda;
+			indiceClienteDeudaMaxima = 	j;
+		}
+
+	}
+	printf("\n\n El cliente con mas deuda es cuit %s - debe %.2f\n",listaCuit[indiceClienteDeudaMaxima],deudaMaxima);
+
+	return retorno;
+
+
+
+}
+
+
+/*int info_calcularDeudaCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit, float* deuda)
+{
+	int retorno = -1;
+	int i;
+	int indiceArrayCliente;
+	int idCliente;
+	float auxiliarDeuda=0;
+	if(arrayPublicaciones != NULL && limitePublicaciones > 0 && arrayClientes != NULL && limiteClientes > 0 && auxiliarCuit != NULL)
+	{
+		for(i=0;i<limitePublicaciones;i++)
+		{
+			if(arrayPublicaciones[i].isEmpty)
+			{
+				continue;
+			}
+			if(strncmp(arrayClientes[i].cuit,auxiliarCuit,CUIT_LEN) == 0)
+			{
+				idCliente = arrayPublicaciones[i].idCliente;
+				indiceArrayCliente = cli_buscarId(arrayClientes,limiteClientes,idCliente);
+//				auxiliarDeuda = auxiliarDeuda + (arrayPublicaciones[i].estado * arrayClientes[indiceArrayCliente].cuit);
+			}
+		}
+		retorno = 0;
+		*deuda=auxiliarDeuda;
+	}
+	return retorno;
+}
+
+
+*/
+

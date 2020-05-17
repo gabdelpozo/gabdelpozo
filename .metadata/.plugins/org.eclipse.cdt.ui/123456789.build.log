@@ -1,0 +1,62 @@
+14:00:52 **** Incremental Build of configuration Debug for project 123456789 ****
+make all 
+Building file: ../src/Informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Informes.d" -MT"src/Informes.o" -o "src/Informes.o" "../src/Informes.c"
+In file included from ../src/Informes.c:11:0:
+../src/Informes.h:11:43: error: unknown type name ‘Publicacion’
+ int info_imprimirClientesPublicadosByCuit(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit);
+                                           ^~~~~~~~~~~
+../src/Informes.h:11:99: error: unknown type name ‘Cliente’
+ int info_imprimirClientesPublicadosByCuit(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit);
+                                                                                                   ^~~~~~~
+In file included from ../src/Informes.c:11:0:
+../src/Informes.h:12:41: error: unknown type name ‘Publicacion’
+ int info_imprimirPublicacionesConEstado(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit);
+                                         ^~~~~~~~~~~
+../src/Informes.h:12:97: error: unknown type name ‘Cliente’
+ int info_imprimirPublicacionesConEstado(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit);
+                                                                                                 ^~~~~~~
+src/subdir.mk:30: recipe for target 'src/Informes.o' failed
+../src/Informes.h:13:52: error: unknown type name ‘Publicacion’
+ int info_imprimirPublicacionesConImportePorCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes);
+                                                    ^~~~~~~~~~~
+../src/Informes.h:13:108: error: unknown type name ‘Cliente’
+ int info_imprimirPublicacionesConImportePorCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes);
+                                                                                                            ^~~~~~~
+../src/Informes.h:14:31: error: unknown type name ‘Publicacion’
+ int info_calcularDeudaCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit, float* deuda);
+                               ^~~~~~~~~~~
+../src/Informes.h:14:87: error: unknown type name ‘Cliente’
+ int info_calcularDeudaCliente(Publicacion* arrayPublicaciones,int limitePublicaciones,Cliente* arrayClientes,int limiteClientes,char* auxiliarCuit, float* deuda);
+                                                                                       ^~~~~~~
+../src/Informes.c:15:34: warning: initializer-string for array of chars is too long
+ static const char ESTADOS[2][4]={"PAUSADO","ACTIVO"};
+                                  ^~~~~~~~~
+../src/Informes.c:15:34: note: (near initialization for ‘ESTADOS[0]’)
+../src/Informes.c:15:44: warning: initializer-string for array of chars is too long
+ static const char ESTADOS[2][4]={"PAUSADO","ACTIVO"};
+                                            ^~~~~~~~
+../src/Informes.c:15:44: note: (near initialization for ‘ESTADOS[1]’)
+../src/Informes.c: In function ‘info_imprimirClientesPublicadosByCuit’:
+../src/Informes.c:33:57: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘const char *’ [-Wformat=]
+     printf("\nID: %d - Texto: %s - Rubro: %d - Estado: %d ",arrayPublicaciones[i].idPub,arrayPublicaciones[i].texto,arrayPublicaciones[i].rubro,ESTADOS[arrayPublicaciones[indiceArrayCliente].estado]);
+                                                        ~^                                                                                       ~~~~~~~
+                                                        %s
+../src/Informes.c: In function ‘info_imprimirPublicacionesConEstado’:
+../src/Informes.c:48:6: warning: variable ‘auxiliarEstado’ set but not used [-Wunused-but-set-variable]
+  int auxiliarEstado;
+      ^~~~~~~~~~~~~~
+../src/Informes.c: In function ‘info_imprimirPublicacionesConImportePorCliente’:
+../src/Informes.c:123:3: warning: implicit declaration of function ‘info_calcularDeudaCliente’ [-Wimplicit-function-declaration]
+   info_calcularDeudaCliente(arrayPublicaciones,limitePublicaciones,arrayClientes,limiteClientes,listaCuit[j], &auxiliarDeuda);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Informes.c: In function ‘info_calcularDeudaCliente’:
+../src/Informes.c:159:67: error: invalid operands to binary * (have ‘int’ and ‘char *’)
+     auxiliarDeuda = auxiliarDeuda + (arrayPublicaciones[i].estado * arrayClientes[indiceArrayCliente].cuit);
+                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+make: *** [src/Informes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:00:54 Build Failed. 11 errors, 5 warnings. (took 1s.491ms)
+

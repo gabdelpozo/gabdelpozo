@@ -1,0 +1,44 @@
+12:58:05 **** Build of configuration Debug for project ParcialPantallasOk ****
+make all 
+Building file: ../Contratacion.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Contratacion.d" -MT"Contratacion.o" -o "Contratacion.o" "../Contratacion.c"
+Finished building: ../Contratacion.c
+ 
+Building file: ../Informes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Informes.d" -MT"Informes.o" -o "Informes.o" "../Informes.c"
+Finished building: ../Informes.c
+ 
+Building file: ../Pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Pantalla.d" -MT"Pantalla.o" -o "Pantalla.o" "../Pantalla.c"
+Finished building: ../Pantalla.c
+ 
+Building file: ../ParcialPantallasClase11.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ParcialPantallasClase11.d" -MT"ParcialPantallasClase11.o" -o "ParcialPantallasClase11.o" "../ParcialPantallasClase11.c"
+Finished building: ../ParcialPantallasClase11.c
+ 
+Building file: ../utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"utn.d" -MT"utn.o" -o "utn.o" "../utn.c"
+../utn.c: In function ‘getString’:
+../utn.c:33:3: warning: implicit declaration of function ‘fpurge’; did you mean ‘free’? [-Wimplicit-function-declaration]
+   fpurge(stdin);
+   ^~~~~~
+   free
+Finished building: ../utn.c
+ 
+Building target: ParcialPantallasOk
+Invoking: MacOS X C Linker
+gcc  -o "ParcialPantallasOk"  ./Contratacion.o ./Informes.o ./Pantalla.o ./ParcialPantallasClase11.o ./utn.o   
+./utn.o: En la función `getString':
+/home/gabriel/Descargas/ParcialPantallasOK/Debug/../utn.c:33: referencia a `fpurge' sin definir
+collect2: error: ld returned 1 exit status
+makefile:29: recipe for target 'ParcialPantallasOk' failed
+make: *** [ParcialPantallasOk] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:58:07 Build Failed. 3 errors, 1 warnings. (took 2s.37ms)
+

@@ -1,0 +1,18 @@
+18:21:10 **** Incremental Build of configuration Debug for project Primer_Parcial1 ****
+make all 
+Building file: ../src/Cliente.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Cliente.d" -MT"src/Cliente.o" -o "src/Cliente.o" "../src/Cliente.c"
+../src/Cliente.c: In function ‘cli_ordenarPorNombrePrecio’:
+../src/Cliente.c:288:35: error: ‘Cliente {aka struct <anonymous>}’ has no member named ‘precio’
+      (auxiliarCmp == 0 && array[i].precio < array[i+1].precio) )
+                                   ^
+../src/Cliente.c:288:55: error: ‘Cliente {aka struct <anonymous>}’ has no member named ‘precio’
+      (auxiliarCmp == 0 && array[i].precio < array[i+1].precio) )
+                                                       ^
+make: *** [src/Cliente.o] Error 1
+src/subdir.mk:30: recipe for target 'src/Cliente.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+18:21:11 Build Failed. 4 errors, 0 warnings. (took 1s.340ms)
+

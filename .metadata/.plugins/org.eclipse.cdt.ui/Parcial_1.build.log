@@ -1,0 +1,17 @@
+14:14:59 **** Incremental Build of configuration Debug for project Parcial_1 ****
+make all 
+Building target: Parcial_1
+Invoking: GCC C Linker
+gcc  -o "Parcial_1"  ./src/Cliente.o ./src/Informes.o ./src/Parcial_1.o ./src/Publicacion.o ./src/utn.o   
+./src/Parcial_1.o: En la función `main':
+makefile:30: recipe for target 'Parcial_1' failed
+/home/gabriel/eclipse-workspace/Parcial_1/Debug/../src/Parcial_1.c:142: referencia a `info_imprimirClientespubratadasByCuit' sin definir
+/home/gabriel/eclipse-workspace/Parcial_1/Debug/../src/Parcial_1.c:162: referencia a `info_imprimirClientespubratadasByCuit' sin definir
+/home/gabriel/eclipse-workspace/Parcial_1/Debug/../src/Parcial_1.c:187: referencia a `info_imprimirPublicacionesConEstado' sin definir
+/home/gabriel/eclipse-workspace/Parcial_1/Debug/../src/Parcial_1.c:195: referencia a `info_imprimirClientespubratadasByCuit' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [Parcial_1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:15:00 Build Failed. 6 errors, 0 warnings. (took 1s.87ms)
+

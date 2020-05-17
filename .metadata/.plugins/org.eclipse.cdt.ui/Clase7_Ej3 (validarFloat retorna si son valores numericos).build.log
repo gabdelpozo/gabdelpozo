@@ -1,0 +1,10 @@
+17:31:15 **** Incremental Build of configuration Debug for project Clase7_Ej3 (validarFloat retorna si son valores numericos) ****
+make all 
+Building target: Clase7_Ej3 
+Invoking: GCC C Linker
+gcc  -o "Clase7_Ej3 (validarFloat retorna si son valores numericos)"  ./src/Clase7_Ej3.o ./src/utn.o   
+Finished building target: Clase7_Ej3 
+ 
+
+17:31:16 Build Finished. 0 errors, 0 warnings. (took 511ms)
+

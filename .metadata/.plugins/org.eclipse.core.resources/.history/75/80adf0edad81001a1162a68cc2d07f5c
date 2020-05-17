@@ -1,0 +1,12 @@
+#ifndef MENU_CALCULADORA_H
+#define MENU_CALCULADORA_H_
+
+int opSumar(int num1, int num2, int *resultado);
+int opRestar(int num1, int num2, int *resultado);
+int opDividir(int num1, int num2, float *resultado);
+int opMultiplicar(int num1, int num2, int *resultado);
+int opFactorial(int num1, int *resultado);
+int imprimirResultados(int suma, int resta, float division,int errorDivision, int multiplicacion, long int factorial1, long int factorial2);
+
+
+#endif /* MENU_CALCULADORA_H_ */

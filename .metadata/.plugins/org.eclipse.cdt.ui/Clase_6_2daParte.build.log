@@ -1,0 +1,27 @@
+14:03:56 **** Build of configuration Debug for project Clase_6_2daParte ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function ‘main’:
+../src/main.c:11:2: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+  strcpy(nombre,"MARIA");
+  ^~~~~~
+../src/main.c:11:2: warning: incompatible implicit declaration of built-in function ‘strcpy’
+../src/main.c:11:2: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+../src/main.c:14:2: warning: implicit declaration of function ‘strncpy’ [-Wimplicit-function-declaration]
+  strncpy(auxiilar,nombre,sizeof(auxiliar));
+  ^~~~~~~
+../src/main.c:14:2: warning: incompatible implicit declaration of built-in function ‘strncpy’
+../src/main.c:14:2: note: include ‘<string.h>’ or provide a declaration of ‘strncpy’
+../src/main.c:14:10: error: ‘auxiilar’ undeclared (first use in this function); did you mean ‘auxiliar’?
+  strncpy(auxiilar,nombre,sizeof(auxiliar));
+          ^~~~~~~~
+          auxiliar
+../src/main.c:14:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+14:03:57 Build Failed. 3 errors, 4 warnings. (took 551ms)
+

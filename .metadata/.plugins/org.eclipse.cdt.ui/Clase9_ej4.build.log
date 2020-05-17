@@ -1,0 +1,14 @@
+22:13:07 **** Incremental Build of configuration Debug for project Clase9_ej4 ****
+make all 
+Building target: Clase9_ej4
+Invoking: MacOS X C Linker
+gcc  -o "Clase9_ej4"  ./src/Clase7_ej2.o ./src/Producto.o ./src/utn.o   
+./src/utn.o: En la función `getString':
+/home/gabriel/Descargas/Clase9_ej4/Debug/../src/utn.c:32: referencia a `fpurge' sin definir
+makefile:30: recipe for target 'Clase9_ej4' failed
+collect2: error: ld returned 1 exit status
+make: *** [Clase9_ej4] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:13:08 Build Failed. 3 errors, 0 warnings. (took 485ms)
+

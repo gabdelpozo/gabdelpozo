@@ -1,0 +1,733 @@
+19:08:14 **** Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:11:37 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:15:56 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:30:10 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:30:12 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:38:54 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c:210:5: error: conflicting types for ‘sortEmployees’
+ int sortEmployees(Employee* list,int len, int order)
+     ^~~~~~~~~~~~~
+In file included from ../src/ArrayEmployees.c:5:0:
+../src/ArrayEmployees.h:25:5: note: previous declaration of ‘sortEmployees’ was here
+ int sortEmployees(Employee* array,int limite);
+     ^~~~~~~~~~~~~
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+src/subdir.mk:27: recipe for target 'src/ArrayEmployees.o' failed
+make: *** [src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:03 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:78:5: error: expected ‘;’ before ‘scanf’
+     scanf("%d",orderEmployee);
+     ^~~~~
+make: *** [src/Trabajo_Practico_2.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Trabajo_Practico_2.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:15 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:78:5: error: expected ‘;’ before ‘scanf’
+     scanf("%d",&orderEmployee);
+     ^~~~~
+src/subdir.mk:27: recipe for target 'src/Trabajo_Practico_2.o' failed
+make: *** [src/Trabajo_Practico_2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:30 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:78:13: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+     scanf("%d",orderEmployee);
+            ~^
+../src/Trabajo_Practico_2.c:78:5: warning: ‘orderEmployee’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     scanf("%d",orderEmployee);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:39:39 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:39:42 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:40:52 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:40:55 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:49:38 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:49:40 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:50:24 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:50:27 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+19:54:45 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+19:54:48 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:03:51 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:03:56 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+../src/ArrayEmployees.c:236:68: error: ‘s’ undeclared (first use in this function)
+src/subdir.mk:27: recipe for target 'src/ArrayEmployees.o' failed
+      if(strncmp(list[i].lastName,list[i+1].lastName,LASTNAME_LEN) <s 0)
+                                                                    ^
+../src/ArrayEmployees.c:236:68: note: each undeclared identifier is reported only once for each function it appears in
+../src/ArrayEmployees.c:236:70: error: expected ‘)’ before numeric constant
+      if(strncmp(list[i].lastName,list[i+1].lastName,LASTNAME_LEN) <s 0)
+                                                                      ^
+make: *** [src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:04:04 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:04:06 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:04:41 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:17:26 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:32:37 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+../src/ArrayEmployees.c: In function ‘sortEmployeesByOrder’:
+../src/ArrayEmployees.c:344:9: error: too few arguments to function ‘strncmp’
+      if(strncmp(list[i].lastName, list[j].lastName)>0)
+         ^~~~~~~
+In file included from ../src/ArrayEmployees.c:3:0:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+src/subdir.mk:27: recipe for target 'src/ArrayEmployees.o' failed
+../src/ArrayEmployees.c:361:9: error: too few arguments to function ‘strncmp’
+      if(strncmp(list[i].lastName, list[j].lastName)<0)
+         ^~~~~~~
+In file included from ../src/ArrayEmployees.c:3:0:
+/usr/include/string.h:139:12: note: declared here
+ extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+            ^~~~~~~
+make: *** [src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:02 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:35:04 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:216:38: warning: comparison between pointer and integer
+  if(list != NULL && len > 0 && order != NULL)
+                                      ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:35:10 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:35:43 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:35:46 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:43:44 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c:211:6: error: conflicting types for ‘sortEmployees’
+ void sortEmployees(Employee* list,int len, int order)
+      ^~~~~~~~~~~~~
+In file included from ../src/ArrayEmployees.c:5:0:
+../src/ArrayEmployees.h:25:5: note: previous declaration of ‘sortEmployees’ was here
+ int sortEmployees(Employee* array,int limite, int order);
+src/subdir.mk:27: recipe for target 'src/ArrayEmployees.o' failed
+     ^~~~~~~~~~~~~
+make: *** [src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:48 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘sortEmployees’:
+../src/ArrayEmployees.c:249:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:44:02 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+20:46:37 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:48:04 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+20:48:07 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:01:42 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:01:45 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:26:30 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘emp_informarTotalyPromedio’:
+../src/ArrayEmployees.c:316:43: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   printf("\nEl total de los salarios es: %d",&acumulador);
+                                          ~^  ~~~~~~~~~~~
+                                          %ls
+../src/ArrayEmployees.c:317:46: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘float *’ [-Wformat=]
+   printf("\nEl promedio de los salarios es: %f",&promedio);
+                                             ~^  ~~~~~~~~~
+../src/ArrayEmployees.c:318:74: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   printf("\nLa cantidad de empleados que supera el salario promedio es: %d",&cont);
+                                                                         ~^  ~~~~~
+                                                                         %ls
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:88:5: warning: implicit declaration of function ‘emp_ordSalarios’ [-Wimplicit-function-declaration]
+     emp_ordSalarios(arrayEmployees, NOMINA_EMPLEADOS, &acumuladorSalarios, &promedioSalarios);
+     ^~~~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:27:02 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:29:07 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:21:8: warning: unused variable ‘promedioSalarios’ [-Wunused-variable]
+  float promedioSalarios;
+        ^~~~~~~~~~~~~~~~
+../src/Trabajo_Practico_2.c:20:8: warning: unused variable ‘acumuladorSalarios’ [-Wunused-variable]
+  float acumuladorSalarios;
+        ^~~~~~~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:29:10 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:29:16 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:29:27 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:29:30 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:31:55 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:31:59 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:36:34 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:21:8: warning: unused variable ‘promedioSalarios’ [-Wunused-variable]
+  float promedioSalarios;
+        ^~~~~~~~~~~~~~~~
+../src/Trabajo_Practico_2.c:20:8: warning: unused variable ‘acumuladorSalarios’ [-Wunused-variable]
+  float acumuladorSalarios;
+        ^~~~~~~~~~~~~~~~~~
+../src/Trabajo_Practico_2.c:79:5: warning: ‘opcionSubMenu’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     switch(opcionSubMenu)
+     ^~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:46:52 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:74:12: warning: implicit declaration of function ‘subMenu’ [-Wimplicit-function-declaration]
+     switch(subMenu())
+            ^~~~~~~
+../src/Trabajo_Practico_2.c:22:6: warning: unused variable ‘opcionSubMenu’ [-Wunused-variable]
+  int opcionSubMenu;
+      ^~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+./src/Trabajo_Practico_2.o: En la función `main':
+/home/gabriel/eclipse-workspace/Trabajo_Practico_2/Debug/../src/Trabajo_Practico_2.c:74: referencia a `subMenu' sin definir
+collect2: error: ld returned 1 exit status
+makefile:30: recipe for target 'Trabajo_Practico_2' failed
+make: *** [Trabajo_Practico_2] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:47:21 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:22:6: warning: unused variable ‘opcionSubMenu’ [-Wunused-variable]
+  int opcionSubMenu;
+      ^~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:47:32 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+../src/Trabajo_Practico_2.c: In function ‘main’:
+../src/Trabajo_Practico_2.c:22:6: warning: unused variable ‘opcionSubMenu’ [-Wunused-variable]
+  int opcionSubMenu;
+      ^~~~~~~~~~~~~
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:47:39 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:47:43 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:47:53 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:47:54 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:51:17 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:51:21 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+21:54:05 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:54:15 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:58:21 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+21:58:23 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+22:00:56 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/Trabajo_Practico_2.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Trabajo_Practico_2.d" -MT"src/Trabajo_Practico_2.o" -o "src/Trabajo_Practico_2.o" "../src/Trabajo_Practico_2.c"
+Finished building: ../src/Trabajo_Practico_2.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+22:01:01 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+22:02:49 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+22:02:52 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.
+22:03:33 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: Trabajo_Practico_2
+Invoking: GCC C Linker
+gcc  -o "Trabajo_Practico_2"  ./src/ArrayEmployees.o ./src/Menu.o ./src/Trabajo_Practico_2.o ./src/utn.o   
+Finished building target: Trabajo_Practico_2
+ 
+22:03:38 **** Incremental Build of configuration Debug for project Trabajo_Practico_2 ****
+make all 
+make: No se hace nada para 'all'.

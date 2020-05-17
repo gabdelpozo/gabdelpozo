@@ -1,0 +1,64 @@
+/*
+ * Ejercicio 1:
+ * Escribir la funcion calcularMayor(). La funcion debe recibir dos
+ * numeros int y devolver por referencia, el numero mayor.
+ * La funcion debe retornar un 1 si encontro un mayor, o un 0
+ * si ambos numeros son iguales.
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+void calcularMayor(*pResultado,operador1,operador2);
+int main(void)
+{
+	int resultado;
+	int num1,num2;
+
+
+	// Pedir dos numeros al usuario con utn_getNumber() y guardarlos
+	// en num 1 y num 2
+	utn_getNumero(&num1,"Ingrese primer numero:\n","Error el numero debe ser entre 0 y 199\n",0,199,2);
+	utn_getNumero(&num2,"Ingrese segundo numero:\n","Error el numero debe ser entre 0 y 199\n",0,199,2);
+
+	// luego llamo a la funcion calcularMayor()
+	if(calcularMayor(&resultado,num1,num2)==0)
+	{
+		printf("Los numeros son iguales\n");
+	}
+	else
+	{
+		printf("El mayor es:%d\n",resultado);
+	}
+
+	return EXIT_SUCCESS;
+	}
+
+}
+
+void calcularMayor(int *pResultado,int n1,int n2)
+{
+	int retorno=0;
+
+	if(pResultado!=NULL)
+	{
+		if(n1==n2)
+		{
+			retorno=0;
+		}
+		else
+		{
+			if(n1>n2)
+			{
+				*pResultado=n1;
+			}
+			else
+			{
+				*pResultado=n2;
+			}
+		}
+		retorno=1;
+		return retorno;
+	}
+
+}

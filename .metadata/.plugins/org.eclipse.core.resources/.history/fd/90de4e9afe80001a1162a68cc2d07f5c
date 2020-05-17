@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+	char nombre[11]="JUAN";
+	char auxiliar[30];
+
+	strncpy(auxiliar,nombre,sizeof(auxiliar));
+	strnlen(auxiliar,nombre,sizeof(auxiliar));
+
+	printf("SIZE Nombre mide %d ----------- Auxiliar mide %d",sizeof(nombre),sizeof(auxiliar));
+	printf("STRLEN Nombre mide %d ---------- Auxiliar mide %d",sizeof(nombrne),sizeof(auxiliar));
+
+
+
+	return EXIT_SUCCESS;
+}

@@ -1,0 +1,127 @@
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int variableGlobal; // no usar, recursan la materia
+
+// prototipos de funciones
+
+int sumarOp(int operador1,int operador2);
+
+int restarOp(int operador1, int operador2);
+
+int multiplicarOp(int operador1, int operador2);
+
+int dividirOp(int operador1, int operador2);
+
+int main(void)
+
+{
+
+	setbuf(stdout,NULL); // SIEMPRE!!!
+
+    int num1;
+
+    int num2;
+
+    int operacion;
+
+    int sumar;
+
+    int restar;
+
+    int multiplicar;
+
+    int dividir;
+
+    printf("ingrese un numero\n");
+
+    scanf("%d",&num1);
+
+    printf("Seleccione operacion\n1 Sumar\n2 Restar\n3 Multiplicar \n4 Dividir\n");
+
+    if(operacion==1)
+    {
+    	sumar=sumarOp(num1,num2);
+    	printf("La suma es %d",sumar);
+    }
+    if(operacion==2)
+    {
+    	restar=restarOp(num1,num2);
+    	printf("La resta es %d",restar);
+    }
+
+    if(operacion==3)
+    {
+    	multiplicar=multiplicarOp(num1,num2);
+    	printf("La multiplicacion es %d",multiplicar);
+    }
+    if(operacion==4)
+    {
+    	dividir=dividirOp(num1,num2);
+    	printf("La division es %d",dividir);
+    }
+
+    scanf("%d",&operacion);
+
+
+    printf("ingrese otro numero\n");
+
+    scanf("%d",&num2);
+
+
+	return EXIT_SUCCESS;
+
+}
+
+// funciones auxiliares de mi programa
+
+//definicion de la funcion sumarConLimite
+
+//TIPO  NOMBRE_FUNCION (void)
+
+//TIPO  NOMBRE_FUNCION (TIPO NOMBRE_ARG,...)
+
+
+int sumarOp(int operador1,int operador2) // prototipo
+
+{
+
+	int resultado;
+
+	resultado=operador1 + operador2;
+
+	return resultado;
+}
+
+int restarOp(int operador1,int operador2) // prototipo
+
+	{
+
+		int resultado;
+
+		resultado=operador1 - operador2;
+
+		return resultado;
+	}
+
+
+	int multiplicarOp(int operador1, int operador2)
+	{
+		int resultado;
+
+		resultado=operador1 * operador2;
+
+		return resultado;
+	}
+
+	int dividirOp(int operador1, int operador2)
+	{
+		int resultado;
+
+		resultado=operador1 / operador2;
+
+		return (float)resultado;
+	}
+
+

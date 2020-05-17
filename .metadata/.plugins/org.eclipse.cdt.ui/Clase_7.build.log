@@ -1,0 +1,41 @@
+19:52:23 **** Incremental Build of configuration Debug for project Clase_7 ****
+make all 
+Building file: ../src/main.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:20: error: expected declaration specifiers or ‘...’ before ‘*’ token
+ void calcularMayor(*pResultado,operador1,operador2);
+                    ^
+../src/main.c:12:32: error: unknown type name ‘operador1’
+ void calcularMayor(*pResultado,operador1,operador2);
+                                ^~~~~~~~~
+../src/main.c:12:42: error: unknown type name ‘operador2’
+ void calcularMayor(*pResultado,operador1,operador2);
+                                          ^~~~~~~~~
+../src/main.c: In function ‘main’:
+../src/main.c:25:5: warning: implicit declaration of function ‘calcularMayor’ [-Wimplicit-function-declaration]
+  if(calcularMayor(&resultado,num1,num2)==0)
+     ^~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:37:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+../src/main.c:39:6: warning: conflicting types for ‘calcularMayor’
+src/subdir.mk:21: recipe for target 'src/main.o' failed
+ void calcularMayor(int *pResultado,int n1,int n2)
+      ^~~~~~~~~~~~~
+../src/main.c:25:5: note: previous implicit declaration of ‘calcularMayor’ was here
+  if(calcularMayor(&resultado,num1,num2)==0)
+     ^~~~~~~~~~~~~
+../src/main.c: In function ‘calcularMayor’:
+../src/main.c:61:10: warning: ‘return’ with a value, in function returning void
+   return retorno;
+          ^~~~~~~
+../src/main.c:39:6: note: declared here
+ void calcularMayor(int *pResultado,int n1,int n2)
+      ^~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:52:24 Build Failed. 6 errors, 3 warnings. (took 655ms)
+
